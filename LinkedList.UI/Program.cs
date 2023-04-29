@@ -20,23 +20,23 @@ carList.Add(new CarList { Brand = "Ford", Model = "Mustang", Year = 2021, Color 
 // Prueba GetBrand
 YourLinkedList toyotaCars = carList.GetBrand("Toyota");
 Console.WriteLine("Toyota Cars:");
-Console.WriteLine(toyotaCars);
+Console.WriteLine(toyotaCars.ToString());
 
 // Prueba GetModel
 YourLinkedList cars2019 = carList.GetYear(2019, 2019);
 Console.WriteLine("\nCars from 2019:");
-Console.WriteLine(cars2019);
+Console.WriteLine(cars2019.ToString());
 
 // Prueba GetPrice
 YourLinkedList mediumPriceCars = carList.GetPrice(60000000, 120000000);
 Console.WriteLine("\nCars between 60 million and 120 million:");
-Console.WriteLine(mediumPriceCars);
+Console.WriteLine(mediumPriceCars.ToString());
 
 // Prueba GetSeveralFilters
 YourLinkedList filteredCars = carList.GetSeveralFilters("Toyota", "*", "Azul", 2020, 240000000);
 Console.WriteLine("\nFiltered Cars (Toyota, Blue, 2020 or newer):");
-Console.WriteLine(filteredCars);
+Console.WriteLine(filteredCars.ToString());
 
 // Prueba GetMinMax
 CarList[] minMax = carList.GetMinMax(carList);
-Console.WriteLine("\nCar with minimum price: {0} {1} {2} - {3:C2}", minMax[0]);
+Console.WriteLine("\nCar with minimum price: {0} | Car with maximun price: {1}", minMax[0].ToString(), minMax[1].ToString());

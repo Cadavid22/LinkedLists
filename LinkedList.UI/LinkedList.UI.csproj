@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LinkedList.logic\LinkedList.logic.csproj" />
-    <ProjectReference Include="..\LinkedLists.Logic\LinkedLists.Logic.csproj" />
   </ItemGroup>
 
 </Project>
