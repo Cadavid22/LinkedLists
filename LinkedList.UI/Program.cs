@@ -22,7 +22,7 @@ YourLinkedList toyotaCars = carList.GetBrand("Toyota");
 Console.WriteLine("Toyota Cars:");
 Console.WriteLine(toyotaCars.ToString());
 
-// Prueba GetModel
+// Prueba GetYear
 YourLinkedList cars2019 = carList.GetYear(2019, 2019);
 Console.WriteLine("\nCars from 2019:");
 Console.WriteLine(cars2019.ToString());
